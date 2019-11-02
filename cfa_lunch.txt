@@ -20,7 +20,7 @@
 3.42: 6ct grilled nugget
 4.49: 8ct grilled nugget
 6.69: 12ct grilled nugget
-####: 30ct grilled nugget
+16.15: 30ct grilled nugget
 1.45: 1 strip
 2.75: 2 strips
 4.09: 3 strips
@@ -35,11 +35,11 @@
 2.09: large >fry
 2.49: small >fruit cup
 3.15: medium >fruit cup
-####: large >fruit cup
+4.59: large >fruit cup
 3.15: side salad
 2.49: small >mac and cheese
 3.15: >mac and cheese
-####: large >mac and cheese
+6.15: large >mac and cheese
 2.99: cup of >chicken_soup
 4.79: bowl of >chicken_soup
 4.19: cup of >tortilla_soup
@@ -58,6 +58,7 @@
 1.25: kids cone >icedream
 1.39: small cone >icedream
 1.79: large cone >icedream
+4.45: qt >icedream
 2.09: brownie
 1.10: bacon <sandwich
 0.15: lettuce <sandwich
