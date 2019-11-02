@@ -1,0 +1,29 @@
+1.09: buttered biscuit
+2.65: chicken biscuit
+2.75: spicy biscuit
+####: chicken egg and cheese biscuit
+3.09: bacon/sausage egg and cheese biscuit
+1.29: muffin
+####: chicken egg and cheese muffin
+3.95: egg white grill
+3.29: bacon/sausage egg and cheese muffin
+1.49: bagel
+####: chicken bagel
+3.95: chicken egg and cheese bagel
+2.05: bagel w/ cream cheese
+3.49: 4ct minis
+3.89: hash brown scramble w/ nuggets
+1.19: hash brown
+3.25: parfait
+2.49: small >fruit cup
+3.15: medium >fruit cup
+####: large >fruit cup
+1.56: grilled breakfast filet
+1.56: fried breakfast filet
+1.66: spicy breakfast filet
+0.30: cheese
+0.60: egg
+0.80: egg whites
+1.10: bacon
+1.10: sausage
+0.15: tomato
