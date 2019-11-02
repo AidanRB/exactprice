@@ -2,21 +2,21 @@ import itertools
 
 target = float(input("Meal price: $"))
 maxitems = int(input("Max items: "))
-tolerance = int(input("Tolerance: ¢"))
+tolerance = int(input("Tolerance: $0.0"))
+filename = input("Prices file: ./")
+
+pricestext = open(filename).read()
+priceslist = pricestext.split("\n")
+pricesarray = []
+for item in priceslist:
+    if("#" not in item.split(": ")[0]):
+        pricesarray += [item.split(": ")]
+pricesarray.pop(-1)
+
+print("Prices imported")
 
 for targetoffset in range(tolerance + 1):
-    print("Target: $" + str(target))
-    pricestext = open("prices.txt").read()
-    priceslist = pricestext.split("\n")
-    pricesarray = []
-    for item in priceslist:
-        if("#" not in item.split(": ")[0]):
-            pricesarray += [item.split(": ")]
-
-    pricesarray.pop(-1)
-
-    print("Prices imported")
-
+    print("\n\nTarget: $" + str(target) + "__________________")
     exactmeals = []
     for j in range(maxitems):
         i = j + 1
@@ -39,7 +39,7 @@ for targetoffset in range(tolerance + 1):
                 price += float(item[0])
             if(price == target and valid):
                 exactmeals += [meal]
-                print("\nMeal found:")
+                print("\n$" + str(target) + " meal found:")
                 for item in meal:
                     print(" -- $" + item[0] + ": " + item[1])
 
