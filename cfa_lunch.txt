@@ -23,8 +23,8 @@
 13.45: 30ct nugget
 
 0.57: 1ct grilled nugget
-0.57: 1ct grilled nugget
-0.57: 1ct grilled nugget
+#0.57: 1ct grilled nugget
+#0.57: 1ct grilled nugget
 2.28: 4ct grilled nugget
 3.42: 6ct grilled nugget
 4.49: 8ct grilled nugget
