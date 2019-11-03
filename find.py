@@ -5,12 +5,18 @@ target = float(input('Meal price: $'))
 maxitems = int(input('Max items: '))
 tolerance = int(input('Tolerance: $0.0'))
 filename = input('Prices file: ./')
+blacklist = input('Avoid (separated by ,): ').split(',')
 
 # Read the prices from a text file
 pricestext = open(filename).read()
 priceslist = pricestext.split('\n')
 pricesarray = []
 for item in priceslist:
+    # Ignore the item if it has a blacklisted keyword
+    for black in blacklist:
+        if black in item:
+            item = ''
+    # If it isn't commented out and exists, add it
     if('#' not in item.split(': ')[0] and item != ''):
         pricesarray += [item.split(': ')]
 
@@ -72,4 +78,5 @@ for targetoffset in range(tolerance + 1):
                 for item in meal:
                     print(' -- $' + item[0] + ': ' + item[1])
 
+    # Decrease target for next round
     target -= 0.01
