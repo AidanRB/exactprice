@@ -15,7 +15,7 @@ for item in priceslist:
 print('Prices imported')
 
 for targetoffset in range(tolerance + 1):
-    print('\n\nTarget: $' + str(target) + '__________________')
+    print('\n\n    Target: $' + str(target) + '\n_____________________________')
     exactmeals = []
     for j in range(maxitems):
         i = j + 1
