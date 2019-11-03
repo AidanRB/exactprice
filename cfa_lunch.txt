@@ -49,9 +49,9 @@
 
 
 # Filets
-#3.44: filet
-#4.50: grilled filet
-#3.74: spicy filet
+3.44: filet
+4.50: grilled filet
+3.74: spicy filet
 
 
 # Salads
