@@ -2,23 +2,34 @@ import itertools
 
 # Get variables to work with
 target = float(input('Meal price: $'))
+origtarget = target
 maxitems = int(input('Max items: '))
 tolerance = int(input('Tolerance: $0.0'))
 filename = input('Prices file: ./')
-blacklist = input('Avoid (separated by ,): ').split(',')
+blacklist = input('Avoid (keywords separated by ,): ').split(',')
+whitelist = input('Mandatory items (exact match): ').split(',')
+
+mandatory = []
 
 # Read the prices from a text file
 pricestext = open(filename).read()
 priceslist = pricestext.split('\n')
 pricesarray = []
 for item in priceslist:
-    # Ignore the item if it has a blacklisted keyword
-    for black in blacklist:
-        if black in item:
-            item = ''
-    # If it isn't commented out and exists, add it
-    if('#' not in item.split(': ')[0] and item != ''):
-        pricesarray += [item.split(': ')]
+    # If it isn't commented out and exists, get it
+    if '#' not in item.split(': ')[0] and item != '':
+        itemarray = item.split(': ')
+        # Ignore the item if it has a blacklisted keyword
+        for black in blacklist:
+            if black in itemarray[1] and black != '':
+                itemarray[0] = ''
+        for white in whitelist:
+            if itemarray[1] == white:
+                mandatory += [itemarray]
+                target -= float(itemarray[0])
+                maxitems -= 1
+        if itemarray[0] != '':
+            pricesarray += [itemarray]
 
 print('Prices imported')
 
@@ -28,12 +39,13 @@ exactmeals = []
 # Run the program once for every available price, based on the tolerance
 for targetoffset in range(tolerance + 1):
     # Print current target price
-    print('\n\n    Target: $' + str(target) + '\n_____________________________')
+    print('\n\n    Target: $' + str(origtarget) +
+          '\n_____________________________')
     # Find all meals with up to the given number of items
     for j in range(maxitems):
         # Start counting at 1
         i = j + 1
-        print('\nGenerating meals with ' + str(i) + ' items...')
+        print('\nGenerating meals with ' + str(i + len(mandatory)) + ' items...')
         # Generate a list of all possible combinations with the menu
         meals = list(itertools.combinations(pricesarray, i))
 
@@ -74,9 +86,12 @@ for targetoffset in range(tolerance + 1):
             # If the meal matches the target and it's valid, print it
             if(price == target and valid):
                 exactmeals += [meal]
-                print('\n$' + str(target) + ' meal found:')
+                print('\n$' + str(origtarget) + ' meal found:')
+                for item in mandatory:
+                    print(' -- $' + item[0] + ': ' + item[1])
                 for item in meal:
                     print(' -- $' + item[0] + ': ' + item[1])
 
     # Decrease target for next round
     target -= 0.01
+    origtarget -= 0.01
