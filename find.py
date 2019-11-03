@@ -26,7 +26,9 @@ for item in priceslist:
             if black in itemarray[1] and black != '':
                 itemarray[0] = ''
         for white in whitelist:
+            # If an item name exactly matches the whitelist,
             if itemarray[1] == white:
+                # add it to mandatory and account for it
                 mandatory += [itemarray]
                 target -= float(itemarray[0])
                 maxitems -= 1
@@ -89,6 +91,7 @@ for targetoffset in range(tolerance + 1):
             if(price == target and valid):
                 exactmeals += [meal]
                 print('\n$' + str(origtarget) + ' meal found:')
+                # Print mandatory items first
                 for item in mandatory:
                     print(' -- $' + item[0] + ': ' + item[1])
                 for item in meal:
