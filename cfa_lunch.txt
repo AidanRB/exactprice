@@ -33,10 +33,10 @@
 
 
 # Strips
-1.45: 1 strip
-2.75: 2 strips
-4.09: 3 strips
-5.29: 4 strips
+1.45: 1ct strip
+2.75: 2ct strip
+4.09: 3ct strip
+5.29: 4ct strip
 
 
 # Condiments
