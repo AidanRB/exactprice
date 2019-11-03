@@ -1,18 +1,27 @@
+# Entrees
 3.69: >sandwich
 3.99: deluxe >sandwich w/o cheese
 4.29: deluxe >sandwich w/ cheese
+
 3.99: spicy >sandwich
 4.29: spicy >sandwich deluxe w/o cheese
 4.59: spicy >sandwich deluxe w/ cheese
+
 5.35: grilled >sandwich
 5.05: grilled >sandwich w/o lt
 6.75: grilled club >sandwich w/ cheese
 6.45: grilled club >sandwich w/o cheese
+
+6.55: wrap
+
+
+# Nuggets
 1.88: 4ct nugget
 2.82: 6ct nugget
 3.75: 8ct nugget
 5.39: 12ct nugget
 13.45: 30ct nugget
+
 0.57: 1ct grilled nugget
 0.57: 1ct grilled nugget
 0.57: 1ct grilled nugget
@@ -21,48 +30,74 @@
 4.49: 8ct grilled nugget
 6.69: 12ct grilled nugget
 16.15: 30ct grilled nugget
+
+
+# Strips
 1.45: 1 strip
 2.75: 2 strips
 4.09: 3 strips
 5.29: 4 strips
-6.55: wrap
+
+
+# Condiments
 1.15: gluten free bun <sandwich
-#3.44: filet
-#4.50: grilled filet
-#3.74: spicy filet
-1.69: small >fry
-1.89: medium >fry
-2.09: large >fry
-2.49: small >fruit cup
-3.15: medium >fruit cup
-4.59: large >fruit cup
-3.15: side salad
-2.49: small >mac and cheese
-3.15: >mac and cheese
-6.15: large >mac and cheese
-2.99: cup of >chicken_soup
-4.79: bowl of >chicken_soup
-4.19: cup of >tortilla_soup
-6.69: bowl of >tortilla_soup
-2.99: superfood side
-####: large superfood side
-3.25: parfait
-1.85: chips
-1.95: apple sauce
-3.29: small >frosted lemonade/coffee/milkshake
-3.79: large >frosted lemonade/coffee/milkshake
-3.59: small >frosted caramel coffee
-4.09: large >frosted caramel coffee
-1.29: cookie
-7.39: 6 cookies
-1.25: kids cone >icedream
-1.39: small cone >icedream
-1.79: large cone >icedream
-4.45: qt >icedream
-2.09: brownie
 1.10: bacon <sandwich
 0.15: lettuce <sandwich
 0.15: tomato <sandwich
 0.30: cheese <sandwich
-1.19: cheese sauce
 0.30: multigrain bun <sandwich
+
+
+# Filets
+#3.44: filet
+#4.50: grilled filet
+#3.74: spicy filet
+
+
+# Salads
+8.19: salad
+3.15: side salad
+
+
+# Sides
+1.69: small >fry
+1.89: medium >fry
+2.09: large >fry
+
+2.49: small >fruit cup
+3.15: medium >fruit cup
+4.59: large >fruit cup
+
+2.49: small >mac and cheese
+3.15: >mac and cheese
+6.15: large >mac and cheese
+
+2.99: cup of >chicken_soup
+4.79: bowl of >chicken_soup
+4.19: cup of >tortilla_soup
+6.69: bowl of >tortilla_soup
+
+2.99: superfood side
+####: large superfood side
+
+3.25: parfait
+1.95: apple sauce
+
+
+# Snacks
+1.85: chips
+1.29: cookie
+7.39: 6 cookies
+2.09: brownie
+
+3.29: small >frosted lemonade/coffee/milkshake
+3.79: large >frosted lemonade/coffee/milkshake
+3.59: small >frosted caramel coffee
+4.09: large >frosted caramel coffee
+
+1.25: kids cone >icedream
+1.39: small cone >icedream
+1.79: large cone >icedream
+4.45: qt >icedream
+
+1.19: cheese sauce
