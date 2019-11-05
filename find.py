@@ -36,6 +36,11 @@ for item in priceslist:
             pricesarray += [itemarray]
 
 print('Prices imported')
+j = 0
+for i in range(len(pricesarray)):
+    if float(pricesarray[j][0]) > target:
+        del(pricesarray[j])
+        j -= 1
 
 # Array of all exact meals
 exactmeals = []
